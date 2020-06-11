@@ -159,7 +159,9 @@ hint - you can use the .includes method to help you solve this */
 function filterByWord(arr, flav){
     let newArray=[];
     for(let i = 0; i < arr.length; i++){
+        if(arr[i].includes(flav)){
         newArray.push(arr[i]);
+        }
     }
     return newArray;
 }
