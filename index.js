@@ -63,8 +63,7 @@ Your function should add the flavor to the front of the array and console.log th
 For example addFlavor("Rainbow Sherbert", originalFlavors) should return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla Burnt Almond"] */ 
 
 function addFlavor(arr, flav){
-    arr.unshift(flav);
-    return arr;
+    return arr.unshift(flav);
 
 }
 console.log('Task 2...',addFlavor(originalFlavors, 'Rainbow Sherbert'));
@@ -118,7 +117,7 @@ Hint: You can use .splice() for this
 function removeFlavorByName(arr, flav){
 
     for(let i = 0; i < arr.length; i++){
-        if(arr[i].includes(flav)){
+        if(arr[i]===flav){
             arr.splice(i,1);  
            }
     }
